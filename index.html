@@ -1,0 +1,567 @@
+<!doctype html>
+<html ⚡ lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <title>Algototo: Alternatif Login dan Daftar Terbaru Anti Nawala</title>
+    <link rel="canonical" href="https://algototo.us.com/" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description"
+        content="Algototo adalah Platform digital gaming dengan beragam jenis permainan mudah untuk di mainkan bagi siapa pun, yuk mabar sekarang.">
+    <link rel="shortcut icon" href="https://s13.gifyu.com/images/bqJlz.png" />
+    <!-- AMP core -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- AMP carousel -->
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <style amp-custom>
+        :root {
+            --bg-main: #050202;
+            --bg-header: #240606;
+            --bg-card: #1b0707;
+            --bg-card-soft: #260a0a;
+            --primary: #ffd53b;
+            /* emas */
+            --primary2: #ffb52b;
+            /* emas oranye */
+            --accent: #ff2a2a;
+            /* hijau neon */
+            --text-main: #ffffff;
+            --text-muted: #d2c2c2;
+            --border-soft: rgba(255, 255, 255, 0.12);
+            --radius-lg: 18px;
+            --radius-md: 12px;
+            --radius-sm: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top, #063432 0, #020504 55%, #000 100%);
+            color: var(--text-main);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .page {
+            min-height: 100vh;
+            padding-bottom: 70px;
+            /* ruang untuk bottom nav */
+        }
+
+        /* HEADER */
+        .top-bar {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 14px;
+            background: linear-gradient(180deg, #06312f, #041314);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-logo {
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+            /* tidak bulat */
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .brand-title {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            margin: 0;
+        }
+
+        .brand-tagline {
+            font-size: 11px;
+            color: #c4f5d2;
+            margin: 0;
+        }
+
+        .top-status {
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(42, 241, 255, 0.7);
+            font-size: 11px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            color: #a6ffbf;
+        }
+
+        .status-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #2affe3;
+            box-shadow: 0 0 10px #2affd1;
+        }
+
+        /* LAYOUT */
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 10px 12px 16px;
+        }
+
+        /* BANNER SLIDER */
+        .banner-wrapper {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+            margin-bottom: 12px;
+            border: 1px solid rgba(76, 249, 255, 0.3);
+            background: #000;
+        }
+
+        /* CTA MASUK / DAFTAR */
+        .cta-bar {
+            display: flex;
+            margin: 10px 0 8px;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.6);
+        }
+
+        .cta-btn {
+            flex: 1;
+            text-align: center;
+            padding: 11px 0;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .cta-masuk {
+            background: linear-gradient(135deg, #ffcc2b, #ffb52b);
+            color: #2a1b00;
+        }
+
+        .cta-daftar {
+            background: linear-gradient(135deg, #ff2a2a, #c80f0f);
+            color: #001507;
+        }
+
+        /* LIVE CHAT */
+        .livechat-btn {
+            margin-top: 6px;
+            width: 100%;
+            border-radius: 999px;
+            padding: 9px 0;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: linear-gradient(90deg, #0a2614, #0d361e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            color: #e9fff2;
+        }
+
+        .livechat-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #2aff6d;
+            box-shadow: 0 0 8px #2aff6d;
+        }
+
+        /* NAV KATEGORI */
+        .cat-bar {
+            margin: 14px 0 10px;
+            background: linear-gradient(90deg, #041408, #073018);
+            border-radius: var(--radius-lg);
+            padding: 10px 10px 8px;
+            border: 1px solid rgba(0, 0, 0, 0.6);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.85);
+        }
+
+        .cat-title {
+            font-size: 11px;
+            color: #c7ffd9;
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+
+        .cat-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px;
+        }
+
+        .cat-arrow {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #f3ffef;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        .cat-items {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            gap: 6px;
+        }
+
+        .cat-item {
+            flex: 1;
+            text-align: center;
+            font-size: 11px;
+            color: #eafff1;
+        }
+
+        .cat-icon {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .cat-label {
+            display: block;
+            white-space: nowrap;
+        }
+
+        /* 5 BOXES (REPLACE PROGRESSIVE JACKPOT) */
+        .social {
+            margin-top: 14px;
+            border-radius: var(--radius-lg);
+            padding: 10px 10px 9px;
+            background: linear-gradient(135deg, #05301a, #042015);
+            border: 1px solid rgba(76, 255, 138, 0.3);
+            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.85);
+        }
+
+        .social-title {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #f5ffef;
+            margin-bottom: 8px;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 6px;
+        }
+
+        .sbox {
+            background: linear-gradient(180deg, #0b3a19, #041c0d);
+            border-radius: 14px;
+            padding: 8px 2px 7px;
+            border: 1px solid rgba(200, 255, 220, 0.25);
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.65), inset 0 0 14px rgba(42, 241, 255, 0.15);
+            text-align: center;
+            color: #e2ffe9;
+        }
+
+        .sbox-icon {
+            font-size: 19px;
+            margin-bottom: 4px;
+        }
+
+        .sbox-label {
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        /* INFO BOX */
+        .info {
+            margin-top: 12px;
+            font-size: 11px;
+            color: var(--text-muted);
+            padding: 9px 10px;
+            border-radius: var(--radius-md);
+            background: rgba(0, 0, 0, 0.45);
+            border: 1px dashed rgba(255, 255, 255, 0.18);
+            line-height: 1.5;
+        }
+
+        .info strong {
+            color: #ffd53b;
+        }
+
+        /* BOTTOM NAV */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: #050b0a;
+            border-top: 1px solid rgba(255, 255, 255, 0.18);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            z-index: 30;
+        }
+
+        .bottom-item {
+            flex: 1;
+            text-align: center;
+            font-size: 10px;
+            color: #d0e7d6;
+        }
+
+        .bottom-item-icon {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+
+        .bottom-item.active {
+            color: #ffd53b;
+        }
+
+        @media (max-width:360px) {
+            .brand-title {
+                font-size: 15px;
+            }
+
+            .brand-logo {
+                width: 36px;
+                height: 36px;
+                font-size: 14px;
+            }
+
+            .social-title {
+                font-size: 11px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- HEADER -->
+        <header class="top-bar">
+            <div class="brand">
+                <!-- Bisa diganti amp-img logo asli -->
+                <div class="brand">
+                </div>
+
+
+            </div>
+            <div class="top-status">
+                <span class="status-dot"></span>
+                <span>Online 24 Jam</span>
+            </div>
+        </header>
+
+        <!-- KONTEN -->
+        <main class="container">
+
+            <!-- SLIDER BANNER -->
+            <section class="banner-wrapper" aria-label="Promo utama">
+                <amp-carousel width="480" height="480" layout="responsive" type="slides" autoplay delay="2500" loop
+                    controls>
+                    <!-- GANTI src DENGAN BANNER ASLI -->
+                    <a href="https://allyoucanplay.info/--A--rhapsody/">
+                        <amp-img src="https://s13.gifyu.com/images/bqJI4.jpg" width="450" height="450"
+                            layout="responsive" alt="Mahjong Maxwin Microgaming">
+                        </amp-img>
+                    </a>
+                    <a href="https://allyoucanplay.info/--A--rhapsody/">
+                        <amp-img src="https://s13.gifyu.com/images/bqJ4W.jpg" width="450" height="450"
+                            layout="responsive" alt="Slot gacor hari ini">
+                        </amp-img>
+                    </a>
+                </amp-carousel>
+            </section>
+
+            <!-- CTA MASUK / DAFTAR -->
+            <section class="cta-bar" aria-label="Masuk dan daftar">
+                <a href="https://allyoucanplay.info/--A--rhapsody/" class="cta-btn cta-masuk">
+                    MASUK
+                </a>
+                <a href="https://allyoucanplay.info/--A--rhapsody/" class="cta-btn cta-daftar">
+                    DAFTAR
+                </a>
+            </section>
+
+            <!-- LIVE CHAT BUTTON -->
+            <a href="https://allyoucanplay.info/--A--rhapsody/" class="livechat-btn">
+                <span class="livechat-dot"></span>
+                <span>Link Alternatif</span>
+            </a>
+            <!-- LIVE CHAT BUTTON -->
+            <a href="https://tawk.to/chat/6877437ffc37d419156e4255/1j08ve148" class="livechat-btn">
+                <span class="livechat-dot"></span>
+                <span>Live Chat 24 Jam • Butuh bantuan?</span>
+            </a>
+
+            <!-- NAV KATEGORI -->
+            <section class="cat-bar" aria-label="Kategori permainan">
+                <div class="cat-title">Pilih kategori favorit Anda:</div>
+                <div class="cat-row">
+                    <div class="cat-arrow" aria-hidden="true">‹</div>
+                    <div class="cat-items">
+                        <a href="https://allyoucanplay.info/--A--rhapsody/" class="cat-item">
+                            <span class="cat-icon">🎰</span>
+                            <span class="cat-label">Slot</span>
+                        </a>
+                        <a href="https://allyoucanplay.info/--A--rhapsody/" class="cat-item">
+                            <span class="cat-icon">🎲</span>
+                            <span class="cat-label">Casino</span>
+                        </a>
+                        <a href="https://allyoucanplay.info/--A--rhapsody/" class="cat-item">
+                            <span class="cat-icon">🀄</span>
+                            <span class="cat-label">Mahjong Maxwin</span>
+                        </a>
+                        <a href="https://allyoucanplay.info/--A--rhapsody/" class="cat-item">
+                            <span class="cat-icon">🏆</span>
+                            <span class="cat-label">Sports</span>
+                        </a>
+                    </div>
+                    <div class="cat-arrow" aria-hidden="true">›</div>
+                </div>
+            </section>
+
+            <!-- INFO KEAMANAN -->
+            <section class="info">
+                <strong>Tips keamanan:</strong> ketik di pencarian google <strong>ALGOTOTO</strong> untuk kemudahan
+                akses.
+                Pastikan masuk di halaman resmi ALGOTOTO untuk menghindari situs tiruan &amp; phishing.
+                Jangan pernah memberikan password mau pun kode OTP ke pihak mana pun, termasuk pihak yang
+                mengaku sebagai admin.
+            </section>
+
+        </main>
+
+        <!-- BOTTOM NAV -->
+        <nav class="bottom-nav" aria-label="Navigasi utama">
+            <a href="https://allyoucanplay.info/--A--rhapsody/" class="bottom-item active">
+                <span class="bottom-item-icon">🏠</span>
+                Beranda
+            </a>
+            <a href="https://allyoucanplay.info/--A--rhapsody/" class="bottom-item">
+                <span class="bottom-item-icon">💰</span>
+                Akun Saya
+            </a>
+            <a href="https://allyoucanplay.info/--A--rhapsody/" class="bottom-item">
+                <span class="bottom-item-icon">🎁</span>
+                Promosi
+            </a>
+            <a href="https://tawk.to/chat/6877437ffc37d419156e4255/1j08ve148" class="bottom-item">
+                <span class="bottom-item-icon">💬</span>
+                Live Chat
+            </a>
+            <a href="https://tawk.to/chat/6877437ffc37d419156e4255/1j08ve148" class="bottom-item">
+                <span class="bottom-item-icon">❓</span>
+                Bantuan
+            </a>
+        </nav>
+
+    </div>
+</body>
+
+</html>
